@@ -1,0 +1,24 @@
+CẬP NHẬT V3 — TRANH THƯỞNG MỞ RỘNG & SECRET
+
+Gói này bổ sung 16 tranh thường mới và 6 tranh đặc biệt Secret, đồng thời cập nhật index.html và sw.js.
+Các file ảnh được đặt ở THƯ MỤC GỐC của repository để phù hợp cách bạn đang tải file lên GitHub (không cần tạo folder images).
+
+CÁCH CẬP NHẬT:
+1. Giải nén ZIP.
+2. Mở repository GitHub: Bang-cuu-chuong.
+3. Chọn Add file -> Upload files.
+4. Tải lên index.html, sw.js và toàn bộ file JPG có trong ZIP.
+5. Giữ nguyên 8 ảnh cũ đang có trên GitHub: puppy.jpg, kitten.jpg, panda.jpg, dolphin.jpg, unicorn.jpg, rocket.jpg, stars.jpg, landscape.jpg.
+6. Nhấn Commit changes.
+7. Đợi 1-3 phút rồi mở lại website game trong Safari.
+
+TRONG GAME:
+- Bộ sưu tập có thêm tranh thường và khu vực TRANH ĐẶC BIỆT · SECRET.
+- Các tranh Secret mở khóa theo mốc: hoàn thành 5 chặng; đạt 300 sao; trả lời đúng tổng cộng 100 câu; hoàn thành 10 chặng; mở khóa 24 tranh thường; mở khóa 5 tranh Secret khác.
+- Để nhận tranh thường, đạt tối thiểu 60% câu đúng ở chặng.
+- Thành tích được lưu trong bộ nhớ trình duyệt của từng thiết bị.
+
+LƯU Ý:
+- Không cần tạo thư mục images; tất cả JPG mới nằm cùng cấp với index.html.
+- Đây là game HTML5/PWA, không phải Flash .swf hay ứng dụng IPA.
+- Nếu game vẫn hiện bản cũ, đóng tab/game, mở link trong Safari và tải lại trang. Service worker mới sẽ lưu cache mathquest-v3.
