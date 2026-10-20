@@ -1,0 +1,22 @@
+SIÊU NHÂN TOÁN HỌC V6 — ÂM THANH VÀ LỜI ĐỘNG VIÊN
+
+Nâng cấp:
+- Giữ thách đấu 10 giây mỗi câu, hiển thị đúng 10.0 giây.
+- Tiếng tích tắc mỗi giây; 3 giây cuối có giọng đếm 3, 2, 1.
+- Âm báo bắt đầu và lời chào: “Chúc em chơi vui! Chuẩn bị... bắt đầu!”.
+- Trả lời đúng: âm thanh fanfare và lời “Hoan hô! Chính xác! Con giỏi lắm!”.
+- Sai/hết giờ: lời nhắc “Cần cố gắng hơn nữa. Mình thử lại nhé!”.
+- Trước 2 câu cuối: “Chuẩn bị kết thúc! Cố lên nào!”.
+- Kết thúc vòng: lời kết thúc phù hợp thành tích.
+- Rời màn hình chơi: “Chào tạm biệt, hẹn gặp lại!”.
+- Có nút bật/tắt âm thanh. Âm thanh dùng Web Audio và giọng đọc tiếng Việt của iPhone, không cần tải file mp3.
+- Giữ nguyên bảng nhân/chia, ngẫu nhiên, mức khó, 5–30 câu và tranh thưởng.
+
+CẬP NHẬT GITHUB PAGES:
+1. Giải nén ZIP.
+2. Trong repository Bang-cuu-chuong, chọn Add file -> Upload files.
+3. Tải lên index.html, sw.js và toàn bộ JPG trong gói (để ở thư mục gốc).
+4. Commit changes, đợi triển khai.
+5. Mở lại website bằng Safari; nếu cần đóng và mở lại biểu tượng màn hình chính.
+
+Lưu ý: iPhone có thể yêu cầu chạm lần đầu để cho phép phát âm thanh. Giọng nói phụ thuộc giọng tiếng Việt đã có trên iOS; nếu giọng không khả dụng, tiếng bíp vẫn hoạt động.

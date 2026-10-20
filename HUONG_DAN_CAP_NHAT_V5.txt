@@ -1,0 +1,16 @@
+SIÊU NHÂN BẢNG CỬU CHƯƠNG V5
+
+Nâng cấp:
+- Thách đấu có 10 giây cho mỗi câu (thay cho 5 giây).
+- Thiết kế lại màn hình chính theo phong cách phiêu lưu, màu sắc rực rỡ, nhân vật hoạt hình, sao, nhiệm vụ và kho báu.
+- Đổi tên bộ nhớ đệm offline thành mathquest-v5 để trình duyệt nhận phiên bản mới.
+- Giữ nguyên các tính năng bảng nhân/chia, chọn độ khó, 5–30 câu và tranh thưởng đã có.
+
+CẬP NHẬT GITHUB PAGES:
+1. Giải nén ZIP.
+2. Vào repository Bang-cuu-chuong -> Add file -> Upload files.
+3. Tải lên index.html và sw.js từ gói này, cùng tất cả ảnh JPG trong ZIP (để ở thư mục gốc, không cần folder images).
+4. Commit changes và chờ GitHub Pages cập nhật.
+5. Mở lại game bằng Safari. Nếu vẫn thấy bản cũ, đóng hẳn tab/game, mở link trong Safari và làm mới.
+
+Lưu ý: đây là game HTML5/PWA, không phải file Flash .swf hay IPA.
