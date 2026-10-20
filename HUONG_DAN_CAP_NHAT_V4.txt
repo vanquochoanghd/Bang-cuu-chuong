@@ -1,0 +1,13 @@
+BẢN V4 — THÁCH ĐẤU 5 GIÂY
+- Chế độ Thách đấu: mỗi câu 5 giây, hết giờ tự chấm sai và hiện đáp án.
+- Chọn mức Dễ/Vừa/Khó.
+- Chọn số câu bằng thanh trượt từ 5 đến 30.
+- Bộ sưu tập chỉ hiện ảnh thật khi đã nhận phần thưởng; tranh chưa mở chỉ hiện ô khóa.
+- Giữ nguyên nhân/chia/ngẫu nhiên và Secret.
+Cập nhật:
+1. Giải nén ZIP.
+2. Trên GitHub repository Bang-cuu-chuong chọn Add file > Upload files.
+3. Upload index.html, sw.js và toàn bộ ảnh JPG ở thư mục gốc, không tạo folder images.
+4. Commit changes.
+5. Mở lại website trong Safari, tải lại trang. Cache đã đổi sang v4.
+Lưu ý: thành tích lưu trên từng thiết bị; không xóa dữ liệu website nếu muốn giữ tiến độ.
