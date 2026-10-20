@@ -1,71 +1,72 @@
 <!doctype html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#6657d9">
-<title>Siêu Nhân Cửu Chương</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="theme-color" content="#5b50d6">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./icon-192.png"><title>Siêu Nhân Cửu Chương</title>
 <style>
-*{box-sizing:border-box} :root{--purple:#6657d9;--dark:#28264f;--mint:#a9f5d5;--yellow:#ffdf75;--pink:#ff9bb8}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--dark);background:linear-gradient(155deg,#e8f5ff,#f2eaff 58%,#fff0df);min-height:100vh;min-height:100dvh}
-button,select,input{font:inherit}button{touch-action:manipulation;cursor:pointer;border:0}
-main{max-width:640px;margin:auto;padding:calc(env(safe-area-inset-top) + 12px) 16px calc(env(safe-area-inset-bottom) + 18px)}
-header{display:flex;justify-content:space-between;align-items:center;font-weight:900;font-size:14px;margin-bottom:12px}.tag{background:#fff;padding:9px 12px;border-radius:14px;box-shadow:0 3px 0 #e0def5}
-.hero{background:linear-gradient(135deg,#7667ed,#5144bc);color:#fff;border-radius:26px;padding:22px 18px;text-align:center;box-shadow:0 7px 0 #40349d}
-.mascot{font-size:56px}.hero h1{font-size:clamp(27px,7vw,38px);line-height:1.05;margin:6px 0 10px}.hero p{margin:0;line-height:1.45;color:#f0efff}
-.card{background:#fff;border-radius:23px;padding:19px;margin-top:16px;box-shadow:0 5px 0 #e0def5}.label{font-weight:900;margin-bottom:11px;display:block}.tables{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.table{background:#f0efff;color:#5a4bc6;padding:12px 0;border-radius:13px;font-weight:900;font-size:18px;border:2px solid transparent}.table.active{background:#dffff1;border-color:#57d7a6;color:#147c5c}
-.modes{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:16px}.mode{padding:12px 6px;border-radius:13px;background:#fff4d0;color:#745400;font-weight:800;border:2px solid transparent}.mode.active{border-color:#f2c34d;background:#ffedac}
-.primary{width:100%;margin-top:17px;padding:16px;border-radius:16px;background:var(--purple);color:white;font-weight:950;font-size:17px;box-shadow:0 5px 0 #40349d}.secondary{width:100%;margin-top:12px;padding:13px;border-radius:15px;background:#f1efff;color:#5a4bc6;font-weight:850}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}.stat{text-align:center;background:#ffffffd9;border-radius:14px;padding:11px 4px;font-size:12px;color:#7e7b9e}.stat b{display:block;font-size:20px;color:var(--dark);margin-bottom:3px}
-.progress{height:9px;background:#e5e2fa;border-radius:10px;overflow:hidden;margin:12px 0}.bar{height:100%;width:0;background:linear-gradient(90deg,#62dbad,#ffcf62);transition:width .25s}
-.question{text-align:center;padding:12px 0 18px}.qsmall{text-transform:uppercase;letter-spacing:1px;font-size:12px;color:#8985b0;font-weight:900}.equation{font-size:clamp(46px,13vw,68px);font-weight:1000;letter-spacing:-2px;margin-top:10px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:11px}.answer{background:#f1f0ff;border:2px solid #e3e0ff;border-radius:17px;padding:17px 6px;font-size:26px;font-weight:950;color:#5a4bc6;box-shadow:0 4px 0 #dedbf6;min-height:67px}.answer.good{background:#d9ffed;border-color:#55d7a6;color:#147c5c}.answer.bad{background:#ffe3eb;border-color:#ff91ad;color:#b22c50}.feedback{text-align:center;font-weight:900;min-height:28px;margin-top:14px}.hidden{display:none!important}.result{text-align:center}.result .emoji{font-size:64px}.result h2{font-size:29px;color:var(--purple);margin:5px}.result p{line-height:1.5;color:#77749a}.note{font-size:12px;color:#8c89a8;text-align:center;margin-top:18px;line-height:1.45}
-@media(min-width:500px){main{padding-left:24px;padding-right:24px}.card{padding:24px}}
-</style>
-</head>
-<body><main>
-<header><div>🌈 HỌC VUI MỖI NGÀY</div><div class="tag">⭐ <span id="allStars">0</span> sao</div></header>
+:root{--purple:#5b50d6;--deep:#302a73;--mint:#7fe7bb;--gold:#ffd568;--pink:#ff7da5;--blue:#42baf4}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#29264f;background:linear-gradient(150deg,#dff5ff,#f1e8ff 52%,#fff0d8);min-height:100vh;min-height:100dvh}
+button,input{font:inherit}button{touch-action:manipulation;cursor:pointer;border:0}
+main{max-width:700px;margin:auto;padding:calc(env(safe-area-inset-top) + 12px) 15px calc(env(safe-area-inset-bottom) + 20px)}
+header{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px;font-weight:900}.pill{background:#fff;border-radius:15px;padding:9px 12px;box-shadow:0 3px 0 #dedaf7}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#6e61ed,#3d83df);color:white;text-align:center;border-radius:27px;padding:22px 18px;box-shadow:0 7px 0 #3d3a9f}
+.hero:before,.hero:after{content:"✦";position:absolute;color:#ffe27c;font-size:50px;opacity:.9}.hero:before{top:7px;left:14px}.hero:after{right:16px;top:26px}
+.mascot{font-size:55px;filter:drop-shadow(0 5px 0 #40349c)}h1{font-size:clamp(28px,8vw,42px);line-height:1.04;margin:5px 0 8px;text-shadow:0 3px #39308b}.hero p{margin:0;line-height:1.4;color:#f5f1ff}
+.card{background:#fff;border-radius:23px;padding:18px;margin-top:15px;box-shadow:0 5px 0 #dedaf7}.label{display:block;font-weight:900;margin-bottom:10px}.modegrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.mode{padding:13px 7px;border-radius:15px;background:#f1efff;border:2px solid transparent;color:#5449bf;font-weight:900}.mode.active{background:#e0fff1;border-color:#54d7a5;color:#117654}
+.tables{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.table{padding:11px 0;border-radius:13px;background:#f0efff;color:#574ac5;font-size:17px;font-weight:900;border:2px solid transparent}.table.active{background:#dffff0;border-color:#51d7a6;color:#137858}
+.btn{width:100%;padding:15px;border-radius:16px;font-weight:950;margin-top:14px;color:#fff;background:linear-gradient(135deg,#6b5fe9,#4c43c2);box-shadow:0 5px 0 #37318e}.btn.green{background:linear-gradient(135deg,#27c98b,#0c9b6d);box-shadow:0 5px 0 #087451}.btn.orange{background:linear-gradient(135deg,#ffb84b,#f17a2e);box-shadow:0 5px 0 #b64c1e}.btn.ghost{background:#f1efff;color:#5b50d6;box-shadow:0 4px 0 #dedaf7}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.stat{background:#ffffffd9;border-radius:15px;padding:10px 3px;text-align:center;color:#7b779c;font-size:12px}.stat b{display:block;font-size:20px;color:#302a73;margin-bottom:3px}
+.hidden{display:none!important}.progress{height:9px;background:#e5e1fa;border-radius:20px;overflow:hidden;margin:13px 0}.bar{height:100%;width:0;background:linear-gradient(90deg,#69e2b1,#ffd568);transition:width .25s}
+.question{text-align:center;padding:13px 0 17px}.small{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8984b0;font-weight:900}.equation{font-size:clamp(44px,12vw,68px);font-weight:1000;letter-spacing:-2px;margin-top:9px;color:#29264f}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}.answer{min-height:65px;border-radius:17px;background:#f0efff;color:#5b50d6;border:2px solid #e2defb;box-shadow:0 4px 0 #dedaf7;font-size:25px;font-weight:950}.answer.good{background:#dcfff0;color:#087751;border-color:#5bd7a7}.answer.bad{background:#ffe3ec;color:#b42d54;border-color:#ff91b0}.feedback{text-align:center;min-height:27px;margin-top:13px;font-weight:900}.inputanswer{width:100%;border:2px solid #dedaf7;border-radius:15px;padding:15px;text-align:center;font-size:25px}.reward{text-align:center}.reward img{width:min(100%,360px);height:280px;object-fit:cover;border-radius:20px;border:4px solid #ffe08b;box-shadow:0 5px 0 #e3d6f4}.reward h2{color:#5748c9;margin:12px 0 5px;font-size:28px}.reward p{line-height:1.5;color:#716c93}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pic{background:#fff;border-radius:16px;padding:7px;box-shadow:0 3px 0 #e2def8;text-align:center;font-size:13px;font-weight:800}.pic img{width:100%;aspect-ratio:4/4.6;object-fit:cover;border-radius:11px}.badge{display:inline-block;background:#fff1bf;color:#785300;padding:7px 12px;border-radius:20px;font-weight:900;margin:4px}.footer{text-align:center;font-size:12px;color:#8c87a8;margin:17px 0 5px}
+@media(min-width:520px){main{padding-left:24px;padding-right:24px}.card{padding:23px}.reward img{height:320px}}
+</style></head><body><main>
+<header><span>🌈 HỌC VUI MỖI NGÀY</span><span class="pill">⭐ <b id="starsTotal">0</b></span></header>
 <section id="home">
-<div class="hero"><div class="mascot">🦊🚀</div><h1>Siêu Nhân<br>Bảng Cửu Chương</h1><p>Luyện trí nhớ, vượt thử thách và thu thập sao!</p></div>
-<div class="card"><span class="label">🎯 Chọn bảng muốn học</span><div class="tables" id="tables"></div>
-<div class="modes"><button class="mode active" data-mode="choice">🧩 Chọn đáp án</button><button class="mode" data-mode="type">⌨️ Tự nhập số</button></div>
-<button class="primary" id="start">BẮT ĐẦU CHƠI ▶</button></div>
-<div class="stats"><div class="stat"><b id="best">0</b>Kỷ lục điểm</div><div class="stat"><b id="plays">0</b>Lượt chơi</div><div class="stat"><b>🏆</b>Siêu nhân toán</div></div>
+<div class="hero"><div class="mascot">🦸🏻‍♂️🤖</div><h1>SIÊU NHÂN<br>BẢNG CỬU CHƯƠNG</h1><p>Học vui • Nhớ lâu • Giỏi toán • Nhận tranh thưởng!</p></div>
+<div class="card">
+<label class="label">🎮 Chọn cách chơi</label>
+<div class="modegrid" id="operationModes"><button class="mode active" data-op="mul">✖️ Bảng nhân</button><button class="mode" data-op="div">➗ Bảng chia</button><button class="mode" data-op="random">🎲 Ngẫu nhiên</button><button class="mode" data-op="mix">🔀 Nhân + chia</button></div>
+<div id="tablePicker" style="margin-top:16px"><label class="label">🎯 Chọn bảng muốn luyện (chọn nhiều bảng được)</label><div class="tables" id="tables"></div></div>
+<label class="label" style="margin-top:16px">⚡ Số câu mỗi chặng</label>
+<div class="modegrid" id="lengthModes"><button class="mode active" data-length="10">10 câu · Dễ bắt đầu</button><button class="mode" data-length="15">15 câu · Thử thách</button></div>
+<button class="btn" id="start">BẮT ĐẦU PHIÊU LƯU 🚀</button>
+<button class="btn ghost" id="openGallery">🖼️ Xem bộ sưu tập tranh thưởng</button>
+</div>
+<div class="stats"><div class="stat"><b id="bestScore">0</b>Kỷ lục điểm</div><div class="stat"><b id="stages">0</b>Chặng hoàn thành</div><div class="stat"><b id="galleryCount">0/8</b>Tranh đã mở khóa</div></div>
 </section>
 <section id="play" class="hidden">
-<div class="stats"><div class="stat"><b id="counter">1/10</b>Câu hỏi</div><div class="stat"><b id="score">0</b>Điểm</div><div class="stat"><b id="streak">0 🔥</b>Chuỗi đúng</div></div>
-<div class="progress"><div class="bar" id="bar"></div></div>
-<div class="card"><div class="question"><div class="qsmall">Tính thật nhanh nhé!</div><div class="equation" id="eq">6 × 7 = ?</div></div>
-<div id="answers" class="answers"></div>
-<form id="typeForm" class="hidden"><input id="typed" type="number" inputmode="numeric" placeholder="Nhập kết quả..." style="width:100%;border:2px solid #e3e0ff;border-radius:15px;padding:15px;text-align:center;font-size:25px"><button class="primary" type="submit">KIỂM TRA ✓</button></form>
-<div id="feedback" class="feedback" aria-live="polite"></div><button id="next" class="primary hidden">CÂU TIẾP THEO ➜</button></div>
-<button id="back" class="secondary">← Về màn hình chính</button>
+<div class="stats"><div class="stat"><b id="counter">1/10</b>Câu hỏi</div><div class="stat"><b id="score">0</b>Điểm chặng</div><div class="stat"><b id="streak">0 🔥</b>Chuỗi đúng</div></div><div class="progress"><div class="bar" id="bar"></div></div>
+<div class="card"><div class="question"><div class="small" id="questionLabel">Thử thách toán học</div><div class="equation" id="equation">7 × 8 = ?</div></div>
+<div id="answers" class="answers"></div><form id="typeForm" class="hidden"><input id="typed" class="inputanswer" inputmode="numeric" type="number" placeholder="Nhập kết quả"><button class="btn" type="submit">KIỂM TRA ✓</button></form>
+<div id="feedback" class="feedback" aria-live="polite"></div><button id="next" class="btn hidden">CÂU TIẾP THEO ➜</button></div>
+<button class="btn ghost" id="quit">← Về màn hình chính</button>
 </section>
-<section id="done" class="hidden"><div class="card result"><div class="emoji" id="emoji">🏆</div><h2 id="headline">Tuyệt vời!</h2><p id="summary">Con đã hoàn thành lượt chơi.</p><div class="stats"><div class="stat"><b id="finalScore">0</b>Điểm</div><div class="stat"><b id="right">0/10</b>Câu đúng</div><div class="stat"><b id="record">0</b>Kỷ lục</div></div><div id="stars" style="font-size:30px;margin-top:16px">⭐⭐⭐</div><button id="again" class="primary">CHƠI LẠI 🔁</button><button id="change" class="secondary">CHỌN BẢNG KHÁC</button></div></section>
-<div class="note">Bản offline: sau khi tải file về máy, game không cần Internet để chơi.<br>Điểm và kỷ lục được lưu trên thiết bị này.</div>
+<section id="reward" class="hidden"><div class="card reward"><div class="badge">🏆 CHẶNG HOÀN THÀNH</div><div id="rewardImgWrap"></div><h2 id="rewardTitle">Tuyệt vời!</h2><p id="rewardText">Bạn đã nỗ lực hết mình!</p><div class="stats"><div class="stat"><b id="rewardScore">0</b>Điểm</div><div class="stat"><b id="rewardCorrect">0/10</b>Câu đúng</div><div class="stat"><b id="rewardStars">+0 ⭐</b>Sao nhận</div></div><button class="btn green" id="continue">TIẾP TỤC CHẶNG MỚI 🚀</button><button class="btn ghost" id="rewardGallery">Xem tranh đã mở khóa 🖼️</button><button class="btn ghost" id="rewardHome">Về màn hình chính</button></div></section>
+<section id="gallery" class="hidden"><div class="card"><h2 style="margin:0 0 6px">🖼️ Bộ sưu tập tranh cổ vũ</h2><p style="color:#77749a;margin-top:0">Mỗi chặng là một cơ hội mở khóa tranh mới. Con luôn xứng đáng được động viên!</p><div class="gallery" id="galleryGrid"></div><button class="btn ghost" id="galleryBack">← Quay lại</button></div></section>
+<div class="footer">✨ Cố gắng từng chút một, con sẽ tiến bộ mỗi ngày!<br>Game lưu thành tích trên thiết bị này.</div>
 </main>
 <script>
-(()=>{const $=x=>document.getElementById(x);let chosen=new Set([2,3,4,5,6,7,8,9]),mode='choice',qs=[],i=0,points=0,right=0,streak=0,locked=false,stars=Number(localStorage.getItem('stars')||0),plays=Number(localStorage.getItem('plays')||0),best=Number(localStorage.getItem('best')||0);
-for(let n=1;n<=10;n++){let b=document.createElement('button');b.className='table'+(chosen.has(n)?' active':'');b.textContent=n;b.onclick=()=>{if(chosen.has(n)){if(chosen.size===1)return;chosen.delete(n);b.classList.remove('active')}else{chosen.add(n);b.classList.add('active')}};$('tables').appendChild(b)}
-document.querySelectorAll('.mode').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;document.querySelectorAll('.mode').forEach(x=>x.classList.toggle('active',x===b))});
-function homeStats(){$('allStars').textContent=stars;$('best').textContent=best;$('plays').textContent=plays}
-function screen(id){['home','play','done'].forEach(s=>$(s).classList.toggle('hidden',s!==id))}
-function shuffle(a){for(let k=a.length-1;k>0;k--){let j=Math.floor(Math.random()*(k+1));[a[k],a[j]]=[a[j],a[k]]}return a}
-function start(){let pool=[];chosen.forEach(a=>{for(let b=1;b<=10;b++)pool.push({a,b,c:a*b})});shuffle(pool);qs=pool.slice(0,10);i=points=right=streak=0;locked=false;screen('play');render()}
-function render(){locked=false;let q=qs[i];$('counter').textContent=(i+1)+'/10';$('score').textContent=points;$('streak').textContent=streak+' 🔥';$('bar').style.width=(i*10)+'%';$('eq').textContent=q.a+' × '+q.b+' = ?';$('feedback').textContent='';$('next').classList.add('hidden');$('answers').classList.toggle('hidden',mode!=='choice');$('typeForm').classList.toggle('hidden',mode!=='type');$('typed').value='';$('typed').disabled=false;$('typeForm').querySelector('button').disabled=false;
-if(mode==='choice'){let a=new Set([q.c]);while(a.size<4){let v=q.c+Math.floor(Math.random()*17)-8;if(v>=0&&v<=100)a.add(v)}$('answers').innerHTML='';shuffle([...a]).forEach(v=>{let b=document.createElement('button');b.className='answer';b.textContent=v;b.onclick=()=>check(v,b);$('answers').appendChild(b)})}else setTimeout(()=>$('typed').focus(),100)}
-function check(v,btn){if(locked)return;locked=true;let q=qs[i],ok=Number(v)===q.c;if(ok){right++;streak++;points+=100+Math.min(streak,5)*10;stars++;$('feedback').textContent='🎉 Chính xác! Con giỏi lắm!';$('feedback').style.color='#13815d';if(btn)btn.classList.add('good')}else{streak=0;$('feedback').textContent='💛 Đáp án đúng là '+q.c+'. Cố lên nhé!';$('feedback').style.color='#b22c50';if(btn)btn.classList.add('bad');document.querySelectorAll('.answer').forEach(b=>{if(Number(b.textContent)===q.c)b.classList.add('good')})}
-$('score').textContent=points;$('streak').textContent=streak+' 🔥';document.querySelectorAll('.answer').forEach(b=>b.disabled=true);$('typed').disabled=true;$('typeForm').querySelector('button').disabled=true;$('bar').style.width=((i+1)*10)+'%';$('next').classList.remove('hidden');$('next').textContent=i===9?'XEM KẾT QUẢ 🏆':'CÂU TIẾP THEO ➜'}
-$('typeForm').onsubmit=e=>{e.preventDefault();if($('typed').value!=='')check($('typed').value)};
-function finish(){plays++;if(points>best)best=points;localStorage.setItem('stars',stars);localStorage.setItem('plays',plays);localStorage.setItem('best',best);$('finalScore').textContent=points;$('right').textContent=right+'/10';$('record').textContent=best;$('emoji').textContent=right>=9?'🏆':right>=7?'🦊':'🌱';$('headline').textContent=right>=9?'Siêu nhân Toán học!':right>=7?'Làm tốt lắm!':'Cố gắng thêm nhé!';$('summary').textContent=right>=9?'Con thuộc bảng cửu chương rất tốt!':right>=7?'Con đang tiến bộ. Luyện thêm một lượt nhé!':'Không sao cả, luyện tập sẽ giúp con giỏi hơn.';$('stars').textContent='⭐'.repeat(right>=9?3:right>=6?2:1)+'☆'.repeat(right>=9?0:right>=6?1:2);homeStats();screen('done')}
-$('next').onclick=()=>{if(i===9)finish();else{i++;render()}};$('start').onclick=start;$('again').onclick=start;$('change').onclick=()=>{screen('home');homeStats()};$('back').onclick=()=>{screen('home');homeStats()};homeStats();
+(()=>{const $=id=>document.getElementById(id);const art=[
+['puppy','Bạn thật tuyệt vời!'],['kitten','Học giỏi quá!'],['panda','Kiên trì là chiến thắng!'],['dolphin','Cứ cố gắng nhé!'],['unicorn','Ước mơ sẽ thành hiện thực!'],['rocket','Tiến lên nào!'],['stars','Bạn luôn tỏa sáng!'],['landscape','Mỗi ngày tốt hơn một chút!']];
+let selected=new Set([2,3,4,5,6,7,8,9]),op='mul',length=10,qs=[],idx=0,points=0,correct=0,streak=0,locked=false,previous='home';
+const saved=()=>{try{return JSON.parse(localStorage.getItem('mathQuestV2')||'{}')}catch(e){return {}}};let data=saved();data.unlocked=data.unlocked||[];data.best=data.best||0;data.stages=data.stages||0;data.stars=data.stars||0;
+for(let n=1;n<=10;n++){let b=document.createElement('button');b.className='table'+(selected.has(n)?' active':'');b.textContent=n;b.onclick=()=>{if(selected.has(n)){if(selected.size===1)return;selected.delete(n);b.classList.remove('active')}else{selected.add(n);b.classList.add('active')}};$('tables').appendChild(b)}
+document.querySelectorAll('[data-op]').forEach(b=>b.onclick=()=>{op=b.dataset.op;document.querySelectorAll('[data-op]').forEach(x=>x.classList.toggle('active',x===b));$('tablePicker').classList.toggle('hidden',op==='random'||op==='mix')});
+document.querySelectorAll('[data-length]').forEach(b=>b.onclick=()=>{length=Number(b.dataset.length);document.querySelectorAll('[data-length]').forEach(x=>x.classList.toggle('active',x===b))});
+function save(){localStorage.setItem('mathQuestV2',JSON.stringify(data));refresh()}
+function refresh(){$('starsTotal').textContent=data.stars;$('bestScore').textContent=data.best;$('stages').textContent=data.stages;$('galleryCount').textContent=data.unlocked.length+'/8'}
+function screen(s){['home','play','reward','gallery'].forEach(x=>$(x).classList.toggle('hidden',x!==s))}
+function shuffle(a){for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function makePool(){let p=[];let tabs=[...selected];if(op==='random'||op==='mix')tabs=[1,2,3,4,5,6,7,8,9,10];tabs.forEach(a=>{for(let b=1;b<=10;b++){if(op==='mul'||op==='random'||op==='mix')p.push({a,b,ans:a*b,sign:'×'});if(op==='div'||op==='random'||op==='mix')p.push({a:a*b,b:a,ans:b,sign:'÷'})}});return shuffle(p)}
+function start(){qs=makePool().slice(0,length);idx=points=correct=streak=0;screen('play');render()}
+function render(){locked=false;let q=qs[idx];$('counter').textContent=(idx+1)+'/'+qs.length;$('score').textContent=points;$('streak').textContent=streak+' 🔥';$('bar').style.width=(idx/qs.length*100)+'%';$('equation').textContent=q.a+' '+q.sign+' '+q.b+' = ?';$('questionLabel').textContent=op==='random'?'🎲 Toán ngẫu nhiên':op==='mix'?'🔀 Nhân và chia xen kẽ':'Thử thách toán học';$('feedback').textContent='';$('next').classList.add('hidden');$('answers').classList.toggle('hidden',op==='type');$('typeForm').classList.add('hidden');$('typed').value='';if(op==='type')$('typeForm').classList.remove('hidden');
+let opts=new Set([q.ans]);while(opts.size<4){let v=q.ans+(Math.floor(Math.random()*15)-7);if(v>=0&&v<=100)opts.add(v)}$('answers').innerHTML='';shuffle([...opts]).forEach(v=>{let b=document.createElement('button');b.className='answer';b.textContent=v;b.onclick=()=>answer(v,b);$('answers').appendChild(b)})}
+function answer(v,btn){if(locked)return;locked=true;let q=qs[idx],ok=Number(v)===q.ans;if(ok){correct++;streak++;points+=100+Math.min(streak,5)*10;$('feedback').textContent=['🎉 Chính xác! Con giỏi lắm!','🌟 Tuyệt vời, hãy tự hào về mình!','🚀 Đúng rồi! Tiến lên nào!'][Math.floor(Math.random()*3)];$('feedback').style.color='#10805b';if(btn)btn.classList.add('good')}else{streak=0;$('feedback').textContent='💛 Đáp án là '+q.ans+'. Sai cũng không sao, mình học tiếp nhé!';$('feedback').style.color='#b32d53';if(btn)btn.classList.add('bad');document.querySelectorAll('.answer').forEach(b=>{if(Number(b.textContent)===q.ans)b.classList.add('good')})}document.querySelectorAll('.answer').forEach(b=>b.disabled=true);$('typed').disabled=true;$('typeForm').querySelector('button').disabled=true;$('score').textContent=points;$('streak').textContent=streak+' 🔥';$('bar').style.width=((idx+1)/qs.length*100*1)+'%';$('next').classList.remove('hidden');$('next').textContent=idx===qs.length-1?'NHẬN PHẦN THƯỞNG 🏆':'CÂU TIẾP THEO ➜'}
+$('typeForm').onsubmit=e=>{e.preventDefault();if($('typed').value!=='')answer($('typed').value)};
+function finish(){data.stages++;data.stars+=Math.max(10,correct*10);if(points>data.best)data.best=points;let artIndex=Math.min(7,data.stages-1);if(correct>=Math.ceil(qs.length*.6)&&!data.unlocked.includes(artIndex))data.unlocked.push(artIndex);save();let a=art[data.unlocked.length?data.unlocked[data.unlocked.length-1]:artIndex];$('rewardImgWrap').innerHTML='';let im=document.createElement('img');im.src='images/'+a[0]+'.jpg';im.alt=a[1];$('rewardImgWrap').appendChild(im);$('rewardTitle').textContent=correct>=qs.length*.8?'🌟 '+a[1]:'💜 Bạn đã hoàn thành chặng!';$('rewardText').textContent=correct>=qs.length*.8?'Bạn đã trả lời đúng rất nhiều câu. Hãy tiếp tục tỏa sáng nhé!':'Mỗi lần luyện tập đều giúp bạn tiến bộ. Cố gắng thêm ở chặng sau nhé!';$('rewardScore').textContent=points;$('rewardCorrect').textContent=correct+'/'+qs.length;$('rewardStars').textContent='+'+Math.max(10,correct*10)+' ⭐';screen('reward')}
+$('next').onclick=()=>{if(idx===qs.length-1)finish();else{idx++;$('typed').disabled=false;$('typeForm').querySelector('button').disabled=false;render()}};
+function gallery(){previous=document.querySelector('#reward:not(.hidden)')?'reward':'home';$('galleryGrid').innerHTML='';art.forEach((a,i)=>{let d=document.createElement('div');d.className='pic';let im=document.createElement('img');im.src='images/'+a[0]+'.jpg';im.alt=a[1];let cap=document.createElement('div');cap.textContent=(data.unlocked.includes(i)?'🔓 ':'🔒 ')+a[1];d.append(im,cap);$('galleryGrid').appendChild(d)});screen('gallery')}
+$('start').onclick=start;$('quit').onclick=()=>{screen('home');refresh()};$('openGallery').onclick=gallery;$('rewardGallery').onclick=gallery;$('galleryBack').onclick=()=>screen(previous);$('rewardHome').onclick=()=>{screen('home');refresh()};$('continue').onclick=start;refresh();
+if('serviceWorker'in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));
 })();
-</script>
-<script>
-if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(()=>{}));
-}
-</script>
-
-</body></html>
+</script></body></html>
